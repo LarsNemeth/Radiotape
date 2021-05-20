@@ -1,8 +1,11 @@
 $primary-color: #003a41;
 $secondary-color: #0092a3;
-$third-color: #dcdcdc;
+$txt-color-1: #333;
+$txt-color-2: #ffffff;
+$bg-color-light: #dcdcdc;
+$bg-color-dark: #1d1d1d;
 $card-gradient: linear-gradient(
   to right,
   rgba($primary-color, 0.9),
-  rgba($third-color, 0.3)
+  rgba($bg-color-light, 0.3)
 );

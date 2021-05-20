@@ -4,12 +4,11 @@
 
 /* Navbar Mobil */
 
-ul {
-  display: flex;
-  justify-content: center;
-}
-
 //* ? Hero Section Mobil *//
+
+.logo {
+  width: 200px;
+}
 
 .bg-hero {
   @include hero-section-img;

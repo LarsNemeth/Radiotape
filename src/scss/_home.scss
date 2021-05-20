@@ -1,6 +1,7 @@
-//* ? Main Home Section -------------------------------------> *//
-//* ? Card Section ------------------------------------------> *//
+@import "mixin";
 
+//* ? Main Home Section -------------------------------------> *//
+//* ? Card Section DEINE LOCATION ------------------------------------------> *//
 .card-flex {
   display: flex;
   justify-content: space-around;
@@ -36,4 +37,43 @@
 .card_4 {
   @include card-bg;
   background: $card-gradient, url(../images/card-img/party_mood.jpg);
+}
+
+//* DEIN RADIO -------------------------------------------------------->  */
+
+.d-location-d-radio {
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.dein-radio {
+  background-color: $bg-color-dark;
+  height: 50vh;
+  padding: 100px;
+
+  h2,
+  p {
+    color: $txt-color-2;
+  }
+}
+
+.dr-right {
+  background-color: $bg-color-light;
+  height: 50vh;
+  padding: 100px;
+  h2,
+  p {
+    color: $txt-color-1;
+  }
+}
+
+.we-are-wrapper {
+  @include center-div-txt;
+  height: 50vh;
+  .we-are {
+    width: 20rem;
+    height: 5rem;
+    border: 10px solid $txt-color-1;
+  }
 }

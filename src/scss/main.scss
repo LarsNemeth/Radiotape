@@ -14,44 +14,14 @@ body {
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.card-flex {
-  display: flex;
-  justify-content: space-around;
-}
-.card {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+footer {
+  flex-direction: column;
+  @include center-div-txt;
+  color: $txt-color-2;
+  height: 33.33vh;
+  background-color: $bg-color-dark;
 
-.card-title {
-  border: 1px solid red;
-  font-size: 5rem;
-  font-weight: 200;
-  text-align: center;
+  img {
+    margin-top: 1rem;
+  }
 }
-
-.card_1 {
-  @include card-bg;
-  background: $card-gradient,
-    url(../images/card-img/people-drinking-dinner-prost.jpg);
-}
-
-.card_2 {
-  @include card-bg;
-  background: $card-gradient,
-    url(../images/card-img/shopping-cart-1024x681.jpeg);
-}
-.card_3 {
-  @include card-bg;
-  background: $card-gradient, url(../images/card-img/reception_bell.png);
-}
-.card_4 {
-  @include card-bg;
-  background: $card-gradient, url(../images/card-img/party_mood.jpg);
-}
-
-//* ? Hero Section  *//
-
-//* ? Main Home Section *//
-//* ? Card Section *//

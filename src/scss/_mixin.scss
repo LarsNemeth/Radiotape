@@ -1,11 +1,18 @@
 //* Hero Section *//
 
+@mixin center-div-txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
 @mixin hero-section-img {
   height: 100vh;
   background: linear-gradient(
       to right,
       rgba($primary-color, 0.9),
-      rgba($third-color, 0.3)
+      rgba($bg-color-light, 0.3)
     ),
     url(../images/bg-img/dj_photo_by_Laura_Balbarde.jpeg) center;
   background-size: cover;
