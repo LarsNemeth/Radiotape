@@ -1,18 +1,5 @@
-// This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "variables";
-@import "header";
-@import "mixin";
-@import "home";
-
-root {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+//* ? Main Home Section -------------------------------------> *//
+//* ? Card Section ------------------------------------------> *//
 
 .card-flex {
   display: flex;
@@ -50,8 +37,3 @@ body {
   @include card-bg;
   background: $card-gradient, url(../images/card-img/party_mood.jpg);
 }
-
-//* ? Hero Section  *//
-
-//* ? Main Home Section *//
-//* ? Card Section *//

@@ -1,0 +1,28 @@
+@import "mixin";
+
+/* ? Header Mobil */
+
+/* Navbar Mobil */
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+//* ? Hero Section Mobil *//
+
+.bg-hero {
+  @include hero-section-img;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-txt {
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  font-weight: 200;
+}
+
+//* ? Hero Section  *//

@@ -4,16 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
-    <title>RADIOTAPE</title>
+    <title>Radiotape</title>
   </head>
   <body>
-    <h1>Hello Project</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia totam
-      nobis iusto accusantium dolorem dolor, facilis blanditiis similique ipsam
-      optio.
-    </p>
+    <header>
+      <!-- ? mobile navbar----------------------------------------------------->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-4">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-1" href="#"
+            ><img
+              src="./images/logos/radiotape-logo.png"
+              alt="radiotape-logo"
+              width="200px"
+          /></a>
+          <button
+            class="navbar-toggler mx-4 fs-1"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3 px-5">
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Branchen</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Vorteile</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Rechtliches</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pakete</a
+                >
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link active" aria-current="page" href="#">Wir</a>
+              </li>
+            </ul>
+
+            <button class="btn btn-outline-danger fs-3" type="submit">
+              Kontakt
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-hero">
+        <h1 class="hero-txt">Musik für dein Geschäft</h1>
+      </div>
+    </header>
+
+    <!-- ? card-section --------------------------------------------------->
+    <main>
+      <section class="card-flex">
+        <div class="row col-sm-12 row-cols-md-6 row-cols-lg-4 m-3">
+          <!-- ? Card 1 --------------------------->
+          <div class="text-white">
+            <div class="card card_1 m-2">
+              <h5 class="card-title">Gastro</h5>
+            </div>
+          </div>
+          <!-- ? Card 2 --------------------------->
+          <div class="text-white">
+            <div class="card card_2 m-2">
+              <h5 class="card-title">Shop</h5>
+            </div>
+          </div>
+          <!-- ? Card 3 --------------------------->
+          <div class="text-white">
+            <div class="card card_3 m-2">
+              <h5 class="card-title">Hotel</h5>
+            </div>
+          </div>
+          <!-- ? Card 4 --------------------------->
+          <div class="text-white">
+            <div class="card card_4 m-2">
+              <h5 class="card-title">Events</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="wave-icon">
+          <img
+            src="./images/icons/sound-waves-transparent-background-4-1024x838.png"
+            alt="wave icon"
+          />
+        </div>
+      </section>
+      <footer></footer>
+    </main>
+
     <!-- Custom scripts, edit above this line -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"

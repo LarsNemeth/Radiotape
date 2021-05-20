@@ -1,0 +1,21 @@
+//* Hero Section *//
+
+@mixin hero-section-img {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($third-color, 0.3)
+    ),
+    url(../images/bg-img/dj_photo_by_Laura_Balbarde.jpeg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin card-bg {
+  height: 200px;
+  background-size: cover;
+}
+
+/* Cassette Photo by Laura Balbarde from Pexels */
+/* DJ Photo by Laura Balbarde from Pexels */
