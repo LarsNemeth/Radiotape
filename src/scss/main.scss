@@ -16,14 +16,17 @@ body {
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+//* FOOTER & IMPRESSUM  *//
+
 footer {
   flex-direction: column;
   @include center-div-txt;
   color: $txt-color-2;
   height: 33.33vh;
   background-color: $bg-color-dark;
+}
 
-  img {
-    margin-top: 1rem;
-  }
+.impressum a {
+  text-decoration: none;
+  color: #fff;
 }
