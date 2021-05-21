@@ -93,7 +93,6 @@
 //* PRICING SECTION -------------------------------------------->  */
 
 .bg-pricing {
-  height: 100vh;
   @include pricing-bg;
   background: $pricing-gradient;
 }

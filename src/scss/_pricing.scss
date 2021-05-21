@@ -39,6 +39,14 @@ a {
   button a {
     color: #ffffff;
   }
+  button:hover {
+    background-color: $bg-color-light;
+    border: none;
+  }
+
+  button a:hover {
+    color: black;
+  }
 }
 
 .pricing-table .pricing-table-header {
