@@ -1,0 +1,53 @@
+@import "mixin";
+@import "variables";
+
+section {
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pricing-table {
+  height: 60vh;
+  text-align: center;
+  background: #ffffff;
+  margin: 0 -15px;
+  box-shadow: 0 0 10px #ababab;
+
+  border-radius: 10px;
+  transform: scale(1);
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    transform: scale(1.15);
+    z-index: 1;
+  }
+
+  .price-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .price-value {
+      font-size: $ft-size-lg-nm;
+    }
+  }
+
+  button a {
+    color: #ffffff;
+  }
+}
+
+.pricing-table .pricing-table-header {
+  padding: 40px 0;
+  background: $bg-color-light;
+  border-radius: 10px 10px 50% 50%;
+  transition: all 0.5s ease 0s;
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}

@@ -19,9 +19,17 @@
   background-repeat: no-repeat;
 }
 
+//* Card Section *//
+
 @mixin card-bg {
   height: 200px;
   background-size: cover;
+}
+
+//* Price Section *//
+
+@mixin pricing-bg {
+  height: 100vh;
 }
 
 //* Contact Form *//
