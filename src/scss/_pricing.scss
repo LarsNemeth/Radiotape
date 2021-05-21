@@ -1,8 +1,10 @@
 @import "mixin";
 @import "variables";
 
-section {
-  margin: 0 auto;
+.bg-pricing {
+  /* @include pricing-bg; */
+  background: $pricing-gradient;
+  height: 70%;
 }
 
 a {
