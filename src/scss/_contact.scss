@@ -1,0 +1,51 @@
+@import "mixin";
+@import "variables";
+
+.bg-contact {
+  @include bg-contact-img;
+  height: 100%;
+}
+
+form {
+  margin-top: 3rem;
+}
+
+input,
+select,
+textarea {
+  display: block;
+  margin: 5px;
+  padding: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+label {
+  margin: 0 15px;
+}
+
+.contact-btn button {
+  height: 50px;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 200px;
+}
+
+legend {
+  margin: 0 auto;
+  font-size: $ft-size-lg-hd;
+}
+label {
+  font-size: $ft-size-lg-nm;
+  line-height: 2;
+}
+
+.contact-form {
+  color: $txt-color-2;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 3px;
+}

@@ -24,5 +24,19 @@
   background-size: cover;
 }
 
+//* Contact Form *//
+
+@mixin bg-contact-img {
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($bg-color-light, 0.3)
+    ),
+    url(../images/bg-img/kaffee-theke.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Cassette Photo by Laura Balbarde from Pexels */
 /* DJ Photo by Laura Balbarde from Pexels */

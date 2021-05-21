@@ -1,7 +1,7 @@
 @import "mixin";
 
 //* ? Main Home Section -------------------------------------> *//
-//* ? Card Section DEINE LOCATION ------------------------------------------> *//
+//* ? DEINE LOCATION (Card Section) ------------------------------------------> *//
 .card-flex {
   display: flex;
   justify-content: space-around;
@@ -43,7 +43,7 @@
   background-size: cover;
 }
 
-//* DEIN RADIO -------------------------------------------------------->  */
+//* DEIN RADIO (Zick Zack - Info -------------------------------------------------------->  */
 
 .d-location-d-radio {
   h2 {
@@ -82,3 +82,10 @@
     border: 10px solid $txt-color-1;
   }
 }
+
+//* ABOUT US -------------------------------------------------------->  */
+
+/* .bg-contact {
+  @include bg-contact-img;
+}
+ */
