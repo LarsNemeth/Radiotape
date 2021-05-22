@@ -26,6 +26,15 @@
   background-size: cover;
 }
 
+//* Timetable  *//@at-root
+
+@mixin center-txt {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
 //* Price Section *//
 
 @mixin pricing-bg {
