@@ -23,7 +23,9 @@
 
 @mixin card-bg {
   height: 200px;
+  width: 100%;
   background-size: cover;
+  color: $txt-color-2;
 }
 
 //* Timetable  *//@at-root

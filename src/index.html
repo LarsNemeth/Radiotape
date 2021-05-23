@@ -17,14 +17,14 @@
       <!-- ? mobile navbar----------------------------------------------------->
       <nav class="navbar navbar-expand-md navbar-dark bg-dark p-4 fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand fs-1" href="#"
+          <a class="navbar-brand" href="#"
             ><img
               src="./images/logos/radiotape-logo.png"
               alt="radiotape-logo"
               class="logo"
           /></a>
           <button
-            class="navbar-toggler mx-4 fs-1"
+            class="navbar-toggler mx-2 fs-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -35,38 +35,42 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-3 px-5">
-              <li class="nav-item px-3">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Branchen</a
                 >
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Vorteile</a
                 >
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Rechtliches</a
                 >
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Pakete</a
                 >
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a class="nav-link active" aria-current="page" href="#">Wir</a>
               </li>
             </ul>
 
-            <button class="btn btn-outline-danger fs-3" type="submit">
-              Kontakt
-            </button>
+            
+              <ul class="navbar-nav ms-auto mx-5" >
+                <button class="btn btn-outline-danger fs-4 " type="submit">
+                  Kontakt
+                </button>
+              </ul>
+            
           </div>
         </div>
       </nav>
@@ -78,128 +82,155 @@
     <!-- ? MAIN START --------------------------------------------------->
     <main>
       <!-- ? DEINE LOCATION Card-section --------------------------------------------------->
-      <section class="card-flex">
-        <div class="row col-sm-12 row-cols-md-6 row-cols-lg-4 m-1">
-          <!-- ? Card 1 --------------------------->
-          <div class="text-white">
-            <div class="card card_1 m-1">
+      <section>
+        <div class="row p-2">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <a href="#"><div class="card_1">
               <h5 class="card-title">Gastro</h5>
             </div>
-          </div>
-          <!-- ? Card 2 --------------------------->
-          <div class="text-white">
-            <div class="card card_2 m-1">
-              <h5 class="card-title">Shop</h5>
+          </div></a>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <a href="#"><div class="card_2">
+              <h5 class="card-title">Shoping</h5>
             </div>
-          </div>
-          <!-- ? Card 3 --------------------------->
-          <div class="text-white">
-            <div class="card card_3 m-1">
+          </div></a>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <a href="#"><div class="card_3">
               <h5 class="card-title">Hotel</h5>
             </div>
-          </div>
-          <!-- ? Card 4 --------------------------->
-          <div class="text-white">
-            <div class="card card_4 m-1">
+          </div></a>
+          <div class="col-sm-12 col-md-6 col-lg-3 hover-card">
+           <a href="#"><div class="card_4">
               <h5 class="card-title">Events</h5>
             </div>
-          </div>
+          </div></a> 
         </div>
       </section>
 
       <!-- ? DEIN RADIO (Vorteile) ------------------------------------------------->
 
       <section>
-        <div class="d-location-d-radio col-sm-12">
-          <div class="dein-radio">
-            <h2>Dein Radio</h2>
-            <p>
-              Mit Radiotape bieten wir eine persönliche Alternative zu den
-              herkömmlichen Streaming-Diensten
-            </p>
-            <button type="button" class="btn btn-info btn-lg">Wir sind</button>
-          </div>
-          <div class="dr-right">
-            <h2>Deine Musik</h2>
-            <p>Playlisten-Planung maßgeschneidert für dein Business</p>
-            <button type="button" class="btn btn-secondary btn-lg">
-              Wir sind
-            </button>
-          </div>
-          <div class="dein-radio">
-            <h2>Dein Laden</h2>
-            <p>
-              Dein Soundtrack für einen entspannten Service: Für glückliche
-              Kunden und Gäste.
-            </p>
-            <button type="button" class="btn btn-info btn-lg">Wir sind</button>
-          </div>
-          <div class="dr-right">
-            <h2>Deine Musik</h2>
-            <p>Musik gewerblich sorgenfrei Streamen</p>
-            <button type="button" class="btn btn-secondary btn-lg">
-              Wir sind
-            </button>
-          </div>
+        <!-- ? JUMBOTRON ANFANG  -->
+        <!-- ? Row 1 left -->
+        <div class="jumbotron dein-radio">
+          <h1 class="display-4">Dein Radio</h1>
+          <hr class="my-4" />
+          <p class="lead">
+            Mit Radiotape bieten wir eine persönliche Alternative zu den
+            herkömmlichen Streaming-Diensten
+          </p>
+
+          <a class="btn btn-primary btn-lg" href="#" role="button">Kontakt</a>
         </div>
+        <!-- ? Row 2 right -->
+
+        <div class="jumbotron dr-right">
+          <h1 class="display-4">Deine Musik</h1>
+          <p class="lead">
+            Playlisten-Planung maßgeschneidert für dein Business
+          </p>
+          <hr class="my-4" />
+
+          <a class="btn btn-primary btn-lg" href="#" role="button">Preise</a>
+        </div>
+
+        <!-- ? Row 3 left -->
+
+        <div class="jumbotron dein-radio">
+          <h1 class="display-4">Dein Laden</h1>
+          <hr class="my-4" />
+          <p class="lead">
+            Dein Soundtrack für einen entspannten Service: Für glückliche Kunden
+            und Gäste.
+          </p>
+
+          <a class="btn btn-primary btn-lg" href="#" role="button">Locations</a>
+        </div>
+
+        <!-- ? Row 4 right -->
+
+        <div class="jumbotron dr-right">
+          <h1 class="display-4">Dein Radio</h1>
+          <hr class="my-4" />
+          <p class="lead">Musik gewerblich sorgenfrei Streamen</p>
+
+          <a class="btn btn-primary btn-lg" href="#" role="button"
+            >Learn more</a
+          >
+        </div>
+        <!-- ? JUMBOTRON ENDE  -->
       </section>
 
       <!-- ? TIMETABLE ANFANG-->
 
       <section>
-        <div class="container mt-5">
-          <div class="tt-section">
-            <div class="time center-table"><span>Zeit</span></div>
-            <div class="morning-1 center-table">
-              <span>08:00 - 09:00 Uhr</span>
-            </div>
-            <div class="morning-2 center-table">
-              <span>09:00 - 10:00 Uhr</span>
-            </div>
-            <div class="morning-3 center-table">
-              <span>l0:00 - 11:00 Uhr</span>
-            </div>
-            <div class="noon-1 center-table">
-              <span>l1:00 - 12:00 Uhr</span>
-            </div>
-            <div class="noon-2 center-table">
-              <span>l2:00 - 13:00 Uhr</span>
-            </div>
-            <div class="noon-3 center-table">
-              <span>l3:00 - 14:00 Uhr</span>
-            </div>
-            <div class="afternoon-1 center-table">
-              <span>14:00 -15:00 Uhr</span>
-            </div>
-            <div class="afternoon-2 center-table">
-              <span>15:00 -16:00 Uhr</span>
-            </div>
-            <div class="afternoon-3 center-table">
-              <span>16:00 -17:00 Uhr</span>
-            </div>
-            <div class="evening-1 center-table">
-              <span>17:00 - 18:00 Uhr</span>
-            </div>
-            <div class="evening-2 center-table">
-              <span>18:00 - 19:00 Uhr</span>
-            </div>
-            <div class="evening-3 center-table">
-              <span>19:00 - 20:00 Uhr</span>
+        <div class="container mt-5 mb-5">
+          <div class="timetable">
+            <div class="table-time">
+              <div class="morning-1 center-table">
+                <span>08:00 - 09:00</span>
+              </div>
+              <div class="morning-2 center-table">
+                <span>09:00 - 10:00</span>
+              </div>
+              <div class="morning-3 center-table">
+                <span>10:00 - 11:00</span>
+              </div>
+              <div class="noon-1 center-table">
+                <span>11:00 - 12:00</span>
+              </div>
+              <div class="noon-2 center-table">
+                <span>12:00 - 13:00</span>
+              </div>
+              <div class="noon-3 center-table">
+                <span>13:00 - 14:00</span>
+              </div>
+              <div class="afternoon-1 center-table">
+                <span>14:00 - 15:00</span>
+              </div>
+              <div class="afternoon-2 center-table">
+                <span>15:00 - 16:00</span>
+              </div>
+              <div class="afternoon-3 center-table">
+                <span>16:00 - 17:00</span>
+              </div>
+              <div class="evening-1 center-table">
+                <span>17:00 - 18:00</span>
+              </div>
+              <div class="evening-2 center-table">
+                <span>18:00 - 19:00</span>
+              </div>
+              <div class="evening-3 center-table">
+                <span>19:00 - 20:00</span>
+              </div>
             </div>
 
-            <div class="mo center-table"><span>Montag</span></div>
-            <div class="tue center-table"><span>Dienstag </span></div>
-            <div class="wed center-table"><span>Mittwoch</span></div>
-            <div class="thu center-table"><span>Donnerstag</span></div>
-            <div class="fri center-table"><span>Freitag</span></div>
-            <div class="sat center-table"><span>Samstag</span></div>
-            <div class="sun center-table"><span>Sonntag</span></div>
-            <div class="gallery-img1"></div>
-            <div class="gallery-img2"></div>
-            <div class="gallery-img3"></div>
-            <div class="gallery-img4"></div>
-            <div class="gallery-img5"></div>
-            <div class="gallery-img6"></div>
+            <!-- ? TIMETABLE DAYS -->
+            <div class="table-days">
+              <div class="mo center-table"><span>Montag</span></div>
+              <div class="tue center-table"><span>Dienstag </span></div>
+              <div class="wed center-table"><span>Mittwoch</span></div>
+              <div class="thu center-table"><span>Donnerstag</span></div>
+              <div class="fri center-table"><span>Freitag</span></div>
+              <div class="sat center-table"><span>Samstag</span></div>
+              <div class="sun center-table"><span>Sonntag</span></div>
+            </div>
+
+            <!-- ? TIMETABLE GALLERY ---------------------------->
+            <div class="table-imgs">
+              <div class="gallery-img1"></div>
+              <div class="gallery-img2"></div>
+              <div class="gallery-img3"></div>
+              <div class="gallery-img4"></div>
+              <div class="gallery-img5"></div>
+              <div class="gallery-img6"></div>
+              <div class="gallery-img7"></div>
+              <div class="gallery-img8"></div>
+              <div class="gallery-img9"></div>
+              <div class="gallery-img10"></div>
+              <div class="gallery-img11"></div>
+              <div class="gallery-img12"></div>
+            </div>
           </div>
         </div>
       </section>

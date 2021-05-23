@@ -6,8 +6,17 @@
 
 //* ? Hero Section Mobil *//
 
+//* NAVBAR *//
 .logo {
-  width: 200px;
+  width: 300px;
+}
+
+a:hover {
+  color: green;
+}
+
+.navbar-toggler {
+  background-color: $secondary-color;
 }
 
 .bg-hero {

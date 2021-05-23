@@ -2,21 +2,19 @@
 
 //* ? Main Home Section -------------------------------------> *//
 //* ? DEINE LOCATION (Card Section) ------------------------------------------> *//
-.card-flex {
-  display: flex;
-  justify-content: space-around;
-}
-.card {
+
+.card_1,
+.card_2,
+.card_3,
+.card_4 {
   display: flex;
   justify-content: center;
-  align-content: center;
-}
+  align-items: center;
 
-.card-title {
-  border: 1px solid red;
-  font-size: 5rem;
-  font-weight: 200;
-  text-align: center;
+  h5 {
+    font-size: 3rem;
+    font-weight: 200;
+  }
 }
 
 .card_1 {
@@ -53,18 +51,13 @@
 
 .dein-radio {
   background-color: $bg-color-dark;
-  height: 50vh;
   padding: 100px;
-
-  h2,
-  p {
-    color: $txt-color-2;
-  }
+  color: $txt-color-2;
 }
 
 .dr-right {
   background-color: $bg-color-light;
-  height: 50vh;
+
   padding: 100px;
   h2,
   p {
