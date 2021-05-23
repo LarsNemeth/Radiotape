@@ -19,6 +19,30 @@
   background-repeat: no-repeat;
 }
 
+@mixin bg-jumbo-1 {
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($bg-color-light, 0.3)
+    ),
+    url(../images/bg-img/Tablet_Musik_600px.jpeg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin bg-jumbo-2 {
+  height: 70vh;
+  background: linear-gradient(
+      to right,
+      rgba($bg-color-dark, 0.9),
+      rgba($secondary-color, 0.3)
+    ),
+    url(../images/bg-img/kaffee-theke.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 //* Card Section *//
 
 @mixin card-bg {

@@ -49,19 +49,30 @@
   }
 }
 
-.dein-radio {
-  background-color: $bg-color-dark;
-  padding: 100px;
+.jumbo {
+  @include bg-jumbo-1;
+  padding: 80px;
+  color: $txt-color-2;
+}
+.jumbo-border {
+  border: 2px solid black;
+  width: 500px;
+}
+
+.jumbo-1 {
+  display: flex;
+  justify-content: start;
   color: $txt-color-2;
 }
 
-.dr-right {
-  background-color: $bg-color-light;
+.jumbo-2 {
+  display: flex;
+  justify-content: end;
+  color: $txt-color-2;
 
-  padding: 100px;
-  h2,
-  p {
-    color: $txt-color-1;
+  .jumbo-border {
+    border: 2px solid black;
+    width: 500px;
   }
 }
 

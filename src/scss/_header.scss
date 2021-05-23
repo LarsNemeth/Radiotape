@@ -11,13 +11,14 @@
   width: 300px;
 }
 
-a:hover {
-  color: green;
-}
-
-.navbar-toggler {
+/* .btn {
   background-color: $secondary-color;
-}
+  color: #fff;
+} */
+
+/* .navbar-toggler {
+  background-color: $secondary-color;
+} */
 
 .bg-hero {
   @include hero-section-img;
