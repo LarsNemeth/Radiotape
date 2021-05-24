@@ -3,42 +3,33 @@
 //* ? Main Home Section -------------------------------------> *//
 //* ? DEINE LOCATION (Card Section) ------------------------------------------> *//
 
-.card_1,
-.card_2,
-.card_3,
-.card_4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cards {
+  position: relative;
+
+  img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+  }
 
   h5 {
-    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-weight: 200;
+    text-decoration: none;
+    color: $txt-color-2;
+    font-size: $ft-size-lg-hd;
   }
-}
 
-.card_1 {
-  @include card-bg;
-  background: $card-gradient,
-    url(../images/card-img/people-drinking-dinner-prost.jpg);
-  background-size: cover;
-}
+  &:hover {
+    opacity: 0.4;
 
-.card_2 {
-  @include card-bg;
-  background: $card-gradient,
-    url(../images/card-img/shopping-cart-1024x681.jpeg);
-  background-size: cover;
-}
-.card_3 {
-  @include card-bg;
-  background: $card-gradient, url(../images/card-img/reception_bell.png);
-  background-size: cover;
-}
-.card_4 {
-  @include card-bg;
-  background: $card-gradient, url(../images/card-img/party_mood.jpg);
-  background-size: cover;
+    h5 {
+      color: black;
+    }
+  }
 }
 
 //* DEIN RADIO (Zick Zack - Info -------------------------------------------------------->  */

@@ -26,5 +26,13 @@
     "live-server": "latest",
     "npm-run-all": "latest",
     "sass": "latest"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LarsNemeth/Radiotape.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LarsNemeth/Radiotape/issues"
+  },
+  "homepage": "https://github.com/LarsNemeth/Radiotape#readme"
 }
