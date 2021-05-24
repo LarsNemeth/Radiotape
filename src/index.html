@@ -14,8 +14,8 @@
   </head>
   <body>
     <header>
-      <!-- ? mobile navbar----------------------------------------------------->
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-4 fixed-top">
+      <!-- ? NAVBAR ----------------------------------------------------->
+      <nav class="navbar bg-dark navbar-expand-md navbar-dark p-md-4 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
             ><img
@@ -23,6 +23,8 @@
               alt="radiotape-logo"
               class="logo"
           /></a>
+
+          <!-- ? NAVBAR MOBILE Toggler Begin ----------------------------------------------------->
           <button
             class="navbar-toggler mx-2 fs-3"
             type="button"
@@ -34,6 +36,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- ? NAVBAR MOBILE Toggler End ----------------------------------------------------->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item px-2">
@@ -65,7 +68,7 @@
             </ul>
 
             <ul class="navbar-nav ms-auto mx-5">
-              <button class="btn btn-outline-success fs-4" type="submit">
+              <button class="btn btn-dark btn-outline-light fs-4" type="submit">
                 Kontakt
               </button>
             </ul>
@@ -444,5 +447,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/index.js"></script>
+    <!-- <script>
+      var nav = document.querySelector("nav");
+
+      window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 100) {
+          nav.classList("bg-dark", "shadow");
+        } else {
+          nav.classList.remove("bg-dark", "shadow");
+        }
+      });
+    </script> -->
   </body>
 </html>

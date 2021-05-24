@@ -7,18 +7,16 @@
 //* ? Hero Section Mobil *//
 
 //* NAVBAR *//
+
+//* NAVBAR TRANSPARENT  *//@at-root
+
+/* .navbar-transparent {
+  background-color: transparent;
+} */
+
 .logo {
   width: 300px;
 }
-
-/* .btn {
-  background-color: $secondary-color;
-  color: #fff;
-} */
-
-/* .navbar-toggler {
-  background-color: $secondary-color;
-} */
 
 .bg-hero {
   @include hero-section-img;
