@@ -1,11 +1,24 @@
 //* Hero Section *//
 
+//* Container for often-used Stylings  *//
+
 @mixin center-div-txt {
   display: flex;
   justify-content: center;
   text-align: center;
   align-content: center;
 }
+
+@mixin black-box {
+  text-align: center;
+  width: 25rem;
+  height: 5rem;
+  border: 10px solid $txt-color-1;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+//* HERO SECTION */
 
 @mixin hero-section-img {
   height: 100vh;
@@ -18,6 +31,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+//* JUMBO - Deine Location Dein Radio ---------------------------*//
 
 @mixin bg-jumbo-1 {
   height: 100%;
@@ -43,16 +58,7 @@
   background-attachment: fixed;
 }
 
-//* Card Section *//
-
-/* @mixin card-bg {
-  height: 200px;
-  width: 100%;
-  background-size: cover;
-  color: $txt-color-2;
-} */
-
-//* Timetable  *//@at-root
+//* TIMETABLE  ---------------------------*//
 
 @mixin center-txt {
   display: flex;
@@ -61,13 +67,13 @@
   text-align: center;
 }
 
-//* Price Section *//
+//* PRICE SECTION ------------------------*//
 
 @mixin pricing-bg {
   height: 60vh;
 }
 
-//* Contact Form *//
+//* CONTACT FORM ------------------------- *//
 
 @mixin bg-contact-img {
   height: 100vh;

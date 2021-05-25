@@ -7,14 +7,14 @@ $ft-size-lg-nm: 1.5rem;
 $ft-size-lg-hd: 3rem;
 $bg-color-light: #dcdcdc;
 $bg-color-dark: #1d1d1d;
-$card-gradient: linear-gradient(
+$ci-gradient: linear-gradient(
   to right,
   rgba($primary-color, 0.9),
   rgba($bg-color-light, 0.3)
 );
 
-$pricing-gradient: linear-gradient(
+/* $pricing-gradient: linear-gradient(
   to right,
   rgba($primary-color, 0.9),
   rgba($bg-color-light, 0.3)
-);
+); */
