@@ -47,13 +47,18 @@
 }
 .jumbo-border {
   background-color: $bg-color-dark;
-  width: 500px;
+  width: 50rem;
 }
 
 .jumbo-1 {
   display: flex;
   justify-content: start;
   color: $txt-color-2;
+
+  .jumbo-border {
+    background-color: $bg-color-dark;
+    width: 45rem;
+  }
 }
 
 .jumbo-2 {
@@ -63,7 +68,7 @@
 
   .jumbo-border {
     border: 2px solid black;
-    width: 500px;
+    width: 45rem;
   }
 }
 

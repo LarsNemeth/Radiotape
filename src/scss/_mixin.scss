@@ -11,8 +11,9 @@
 
 @mixin black-box {
   text-align: center;
-  width: 25rem;
-  height: 5rem;
+  line-height: 2.6;
+  width: 30rem;
+  height: 8rem;
   border: 10px solid $txt-color-1;
   text-transform: uppercase;
   letter-spacing: 15px;

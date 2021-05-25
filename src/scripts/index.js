@@ -5,6 +5,6 @@
         if (window.pageYOffset > 100) {
           nav.classList.replace("bg-transparent", "bg-dark");
         } else {
-          nav.classList.remove("bg-transparent");
+          nav.classList.add("bg-transparent");
         }
       });
