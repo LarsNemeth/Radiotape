@@ -1,3 +1,5 @@
+/* @import "node_modules/bootstrap/scss/bootstrap"; */
+
 $primary-color: #003a41;
 $secondary-color: #0092a3;
 $txt-color-1: #333;
@@ -13,8 +15,6 @@ $ci-gradient: linear-gradient(
   rgba($bg-color-light, 0.3)
 );
 
-/* $pricing-gradient: linear-gradient(
-  to right,
-  rgba($primary-color, 0.9),
-  rgba($bg-color-light, 0.3)
-); */
+//* BUTTON COLORS  *//
+
+$btn-bg-petrol: (#0092a3);

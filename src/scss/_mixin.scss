@@ -1,25 +1,4 @@
-//* Hero Section *//
-
-//* Container for often-used Stylings  *//
-
-@mixin center-div-txt {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
-}
-
-@mixin black-box {
-  text-align: center;
-  line-height: 2.6;
-  width: 30rem;
-  height: 8rem;
-  border: 10px solid $txt-color-1;
-  text-transform: uppercase;
-  letter-spacing: 15px;
-}
-
-//* HERO SECTION */
+//* HERO SECTION ---------------------------------------*/
 
 @mixin hero-section-img {
   height: 100vh;
@@ -47,19 +26,30 @@
   background-attachment: fixed;
 }
 
-@mixin bg-jumbo-2 {
-  height: 70vh;
-  background: linear-gradient(
-      to right,
-      rgba($bg-color-dark, 0.9),
-      rgba($secondary-color, 0.3)
-    ),
-    url(../images/bg-img/kaffee-theke.jpg) center;
-  background-size: cover;
-  background-attachment: fixed;
+//* LIGHT BACKGROUND SECTION (Wir sind ...) ---------------------- */
+
+@mixin black-box {
+  text-align: center;
+  line-height: 2.6;
+  width: 30rem;
+  height: 8rem;
+  border: 10px solid $txt-color-1;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+//* Container for often-used Stylings  ------ *//
+
+@mixin center-div-txt {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
 }
 
 //* TIMETABLE  ---------------------------*//
+
+//* CENTER Days & Time  */
 
 @mixin center-txt {
   display: flex;

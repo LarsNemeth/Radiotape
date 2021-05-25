@@ -1,7 +1,8 @@
 @import "mixin";
 
-//* ? Main Home Section -------------------------------------> *//
-//* ? DEINE LOCATION (Card Section) ------------------------------------------> *//
+//* ? HOME Section -------------------------------------> *//
+
+//* ? CARDS (Gastro / Shop / Hotel / Events) ------------------------------------------> *//
 
 .cards {
   position: relative;
@@ -32,34 +33,38 @@
   }
 }
 
-//* DEIN RADIO (Zick Zack - Info -------------------------------------------------------->  */
+//* JUMBO SECTION  -------------------------------------------------------->  */
 
-.d-location-d-radio {
-  h2 {
-    text-transform: uppercase;
-  }
-}
+//* JUMBO BACKGROUND  -----------------------------------*//
 
 .jumbo {
   @include bg-jumbo-1;
   padding: 80px;
   color: $txt-color-2;
 }
-.jumbo-border {
-  background-color: $bg-color-dark;
-  width: 50rem;
-}
+
+//* JUMBO LEFT  --------------------------*//
 
 .jumbo-1 {
   display: flex;
   justify-content: start;
-  color: $txt-color-2;
 
   .jumbo-border {
     background-color: $bg-color-dark;
     width: 45rem;
+
+    .my-btn-petrol {
+      background-color: $btn-bg-petrol;
+      color: #fff;
+
+      &:hover {
+        background-color: red;
+      }
+    }
   }
 }
+
+//* JUMBO RIGHT  --------------------------*//
 
 .jumbo-2 {
   display: flex;
@@ -67,12 +72,21 @@
   color: $txt-color-2;
 
   .jumbo-border {
-    border: 2px solid black;
+    background-color: $bg-color-dark;
     width: 45rem;
+
+    .my-btn-petrol {
+      background-color: $btn-bg-petrol;
+      color: #fff;
+
+      &:hover {
+        background-color: red;
+      }
+    }
   }
 }
 
-//* ABOUT US -------------------------------------------->  */
+//* ABOUT US (Wir sind ...)  -------------------------------------------->  */
 .we-are-wrapper {
   display: flex;
   flex-direction: column;

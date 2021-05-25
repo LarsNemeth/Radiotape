@@ -8,15 +8,41 @@
 
 //* NAVBAR *//
 
-//* NAVBAR TRANSPARENT  *//@at-root
+//* NAVBAR UNDERLINE  *//
 
-/* .navbar-transparent {
-  background-color: transparent;
-} */
+ul a:hover {
+  color: $txt-color-2 !important;
+}
+
+li > a:after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background: $secondary-color;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+li > a:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.3s;
+}
+.active {
+  color: $txt-color-2 !important;
+}
+
+//* NAVBAR LOGO  *//
 
 .logo {
-  width: 300px;
+  width: 400px;
 }
+
+@media (max-width: 576px) {
+  .logo {
+    width: 200px;
+  }
+}
+
+//* HERO SECTION  *//
 
 .bg-hero {
   @include hero-section-img;
@@ -32,4 +58,8 @@
   font-weight: 200;
 }
 
-//* ? Hero Section  *//
+@media (max-width: 576px) {
+  .hero-txt {
+    font-size: 4rem;
+  }
+}
