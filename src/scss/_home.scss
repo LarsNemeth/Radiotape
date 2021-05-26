@@ -33,6 +33,36 @@
   }
 }
 
+//* DIE ALTERNATIVE *//
+
+.alternative-wrapper {
+  background-color: $bg-color-dark;
+  padding: 100px;
+  color: $txt-color-2;
+
+  img {
+    width: 30rem;
+  }
+
+  p {
+    font-size: $ft-size-lg-nm;
+  }
+}
+
+@media (max-width: 576px) {
+  .alternative-wrapper {
+    padding: 50px;
+
+    img {
+      width: 20rem;
+    }
+
+    p {
+      font-size: $ft-size-lg-sm;
+    }
+  }
+}
+
 //* JUMBO SECTION  -------------------------------------------------------->  */
 
 //* JUMBO BACKGROUND  -----------------------------------*//
