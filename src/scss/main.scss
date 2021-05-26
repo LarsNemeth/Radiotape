@@ -7,7 +7,7 @@
 @import "timetable";
 @import "pricing";
 @import "contact";
-
+@import "impressum";
 root {
   font-size: 62.5%;
 }
@@ -31,8 +31,3 @@ footer {
   text-decoration: none;
   color: #fff;
 }
-
-$theme-colors: (
-  "primary": #0092a3,
-  "secodary": #333,
-);
