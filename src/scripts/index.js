@@ -8,3 +8,8 @@
           nav.classList.add("bg-transparent");
         }
       });
+
+     
+      //* FAVICONS  *//
+      src="https://kit.fontawesome.com/9f49c39477.js"
+      crossorigin="anonymous";

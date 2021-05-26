@@ -38,6 +38,23 @@
   letter-spacing: 15px;
 }
 
+@mixin black-box-mixin {
+  @media (max-width: 576px) {
+    .we-are-hd {
+      /* text-align: center; */
+      line-height: 2.6;
+      width: 6rem;
+      height: 3rem;
+      border: 10px solid $txt-color-1;
+      text-transform: uppercase;
+    }
+    span {
+      letter-spacing: 15px;
+      font-size: $ft-size-lg-nm;
+    }
+  }
+}
+
 //* Container for often-used Stylings  ------ *//
 
 @mixin center-div-txt {

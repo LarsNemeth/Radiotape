@@ -86,20 +86,67 @@
   }
 }
 
+@media (max-width: 576px) {
+  .wordbreak {
+    word-break: break-all;
+  }
+}
+
 //* ABOUT US (Wir sind ...)  -------------------------------------------->  */
 .we-are-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  height: 100%;
   background-color: $bg-color-light;
 
   .we-are-hd {
     @include black-box;
   }
 
+  @media (max-width: 576px) {
+    .we-are-hd {
+      line-height: 2;
+      width: 20rem;
+      height: 5rem;
+      border: 10px solid $txt-color-1;
+      text-transform: uppercase;
+
+      span {
+        letter-spacing: 15px;
+        font-size: $ft-size-lg-nm;
+      }
+    }
+    .we-are-p p {
+      width: 80%;
+      text-align: center;
+      padding-left: 5rem;
+    }
+  }
+
   p {
     width: 900px;
+  }
+
+  span {
+    letter-spacing: 15px;
+    font-size: $ft-size-lg-nm;
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 10rem;
+      height: 10rem;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .wordbreak {
+    word-break: break-all;
   }
 }
 
@@ -110,3 +157,13 @@
 }
 
 //* PRICING SECTION -------------------------------------------->  */
+
+//* FOOTER -------------------------------------------->  */
+
+.social-icons a {
+  color: $txt-color-2;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
