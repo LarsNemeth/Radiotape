@@ -135,62 +135,52 @@
 .gallery-img11,
 .gallery-img12 {
   border: 5px solid white;
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .gallery-img1 {
   grid-area: 1/1/4/3;
-  background-image: url(../images/tt-img/wake-up-toast.png);
-  background-position: center;
 }
 .gallery-img2 {
   grid-area: 4/2/7/5;
-  background-image: url(../images/tt-img/evergreens.png);
 }
 .gallery-img3 {
   grid-area: 1/7/13/8;
-  background-image: url(../images/tt-img/radioKnopf.jpg);
 }
 .gallery-img4 {
   grid-area: 4/5/10/7;
-  background-image: url(../images/tt-img/love-tape.png);
 }
 .gallery-img5 {
   grid-area: 4/1/7/2;
-  background-image: url(../images/tt-img/reception_2.png);
 }
 .gallery-img6 {
   grid-area: 1/5/4/7;
-  background-image: url(../images/tt-img/coffee-machine.png);
 }
 
 .gallery-img7 {
   grid-area: 7/3/13/5;
-  background-image: url(../images/tt-img/rush-hour.png);
 }
 .gallery-img8 {
   grid-area: 10/2/13/3;
-  background-image: url(../images/tt-img/moodtape.png);
 }
 .gallery-img9 {
   grid-area: 10/5/13/7;
-  background-image: url(../images/tt-img/mexican-food.png);
-  background-size: cover;
 }
 
 .gallery-img10 {
   grid-area: 10/1/13/2;
-  background-image: url(../images/tt-img/piano_music.jpeg);
 }
 
 .gallery-img11 {
   grid-area: 7/1/10/3;
-  background-image: url(../images/tt-img/wellness.png);
 }
 
 .gallery-img12 {
   grid-area: 1/3/4/5;
-  background-image: url(../images/tt-img/guitar-leafs.jpeg);
-  background-size: cover;
 }
