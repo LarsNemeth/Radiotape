@@ -1,5 +1,7 @@
 # DCI Boilerplate I: Sass + bootstrap
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/65accf2d-76a1-4742-a6d0-315d5c397751/deploy-status)](https://app.netlify.com/sites/radiotape-new/deploys)
+
 An HTML CSS boilerplate with built-in sass support:
 
 - Automatic [Sass](https://sass-lang.com/) transpilation

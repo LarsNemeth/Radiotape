@@ -40,7 +40,8 @@ li > a:hover:after {
     flex-flow: column wrap;
     align-items: center;
     height: 100vh;
-    /* background-color: $bg-color-dark; */
+    font-size: $ft-size-lg-nm;
+    background-color: $bg-color-dark;
   }
 }
 
@@ -57,9 +58,16 @@ li > a:hover:after {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 7.5rem;
+    font-size: $ft-size-lg-hd;
     height: 100vh;
   }
+}
+
+//* NAVBAR TOGGLER  *//
+
+.navbar-toggler {
+  background-color: $primary-color;
 }
 
 //* HERO SECTION  *//
@@ -75,7 +83,7 @@ li > a:hover:after {
   font-size: 5rem;
   text-align: center;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @media (max-width: 576px) {
