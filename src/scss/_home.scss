@@ -35,45 +35,53 @@
 
 //* DIE ALTERNATIVE *//
 
-.alternative-wrapper {
+.alternative-wrapper-1 {
+  height: 100%;
   background-color: $bg-color-dark;
   padding: 100px;
   color: $txt-color-2;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   .logo-alt {
-    width: 20rem;
+    width: 200px;
   }
 
   .sound-bar {
-    width: 2rem;
+    width: 40px;
     transform: rotate(90deg);
   }
+}
+
+.alternative-cassette {
+  display: flex;
+  justify-content: space-between;
 
   p {
     font-size: $ft-size-lg-sm;
     font-weight: 300;
     width: 40rem;
   }
+
+  .cassette img {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    transform: rotate(30deg);
+    opacity: 0.5;
+    width: 450px;
+  }
 }
 
-@media (max-width: 576px) {
-  .alternative-wrapper {
-    padding: 50px;
+@media (max-width: 768px) {
+  .alternative-wrapper-1 {
+    padding: 40px;
+  }
 
-    .logo-alt {
-      width: 15rem;
-    }
-
-    img {
-      width: 20rem;
-    }
-
-    p {
-      font-size: $ft-size-lg-sm;
-      width: 15rem;
-    }
+  .alternative-cassette .cassette img {
+    left: 40%;
+    top: 15.5%;
   }
 }
 
@@ -85,49 +93,49 @@
   @include bg-jumbo-1;
   padding: 80px;
   color: $txt-color-2;
-}
 
-//* JUMBO LEFT  --------------------------*//
+  //* JUMBO LEFT  --------------------------*//
 
-.jumbo-1 {
-  display: flex;
-  justify-content: start;
+  .jumbo-1 {
+    display: flex;
+    justify-content: start;
 
-  .jumbo-border {
-    background-color: $bg-color-dark;
-    width: 45rem;
+    .jumbo-border {
+      background-color: $bg-color-dark;
+      width: 45rem;
 
-    .my-btn-petrol {
-      background-color: $btn-bg-petrol;
-      color: #fff;
-      border-radius: 40px;
+      .my-btn-petrol {
+        background-color: $btn-bg-petrol;
+        color: #fff;
+        border-radius: 40px;
 
-      &:hover {
-        background-color: red;
+        &:hover {
+          background-color: red;
+        }
       }
     }
   }
-}
 
-//* JUMBO RIGHT  --------------------------*//
+  //* JUMBO RIGHT  --------------------------*//
 
-.jumbo-2 {
-  display: flex;
-  justify-content: end;
-  color: $txt-color-2;
+  .jumbo-2 {
+    display: flex;
+    justify-content: end;
+    color: $txt-color-2;
 
-  .jumbo-border {
-    background-color: $bg-color-dark;
-    width: 45rem;
+    .jumbo-border {
+      background-color: $bg-color-dark;
+      width: 45rem;
 
-    .my-btn-petrol {
-      background-color: $btn-bg-petrol;
-      color: #fff;
-      border-radius: 40px;
-
-      &:hover {
-        background-color: red;
+      .my-btn-petrol {
+        background-color: $btn-bg-petrol;
+        color: #fff;
         border-radius: 40px;
+
+        &:hover {
+          background-color: red;
+          border-radius: 40px;
+        }
       }
     }
   }
