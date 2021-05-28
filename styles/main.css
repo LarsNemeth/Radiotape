@@ -10768,10 +10768,11 @@ li > a:hover:after {
     flex-flow: column wrap;
     align-items: center;
     height: 100vh;
+    font-size: 1.5rem;
     /* background-color: $bg-color-dark; */
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .navbar {
     padding: 1.5rem;
   }
@@ -10784,13 +10785,18 @@ li > a:hover:after {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 7.5rem;
+    font-size: 3rem;
     height: 100vh;
   }
 }
+.navbar-toggler {
+  background-color: #003a41;
+}
+
 .bg-hero {
   height: 100vh;
-  background: linear-gradient(to right, rgba(0, 58, 65, 0.9), rgba(220, 220, 220, 0.3)), url(../images/bg-img/dj_photo_by_Laura_Balbarde.jpeg) center;
+  background: linear-gradient(to left, #003a41, rgba(220, 220, 220, 0.3)), url(../images/bg-img/dj_photo_by_Laura_Balbarde.jpeg) center;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -10802,7 +10808,7 @@ li > a:hover:after {
   font-size: 5rem;
   text-align: center;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @media (max-width: 576px) {
@@ -10883,7 +10889,7 @@ li > a:hover:after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 200;
+  font-weight: 300;
   text-decoration: none;
   color: #ffffff;
   font-size: 3rem;
@@ -10895,41 +10901,114 @@ li > a:hover:after {
   color: black;
 }
 
-.alternative-wrapper {
+.alternative-wrapper-1 {
+  height: 500px;
   background-color: #1d1d1d;
   padding: 100px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
-.alternative-wrapper .logo-alt {
-  width: 20rem;
+.alternative-wrapper-1 .logo-alt {
+  width: 200px;
 }
-.alternative-wrapper .sound-bar {
-  width: 2rem;
+.alternative-wrapper-1 .sound-bar {
+  width: 40px;
   transform: rotate(90deg);
 }
-.alternative-wrapper p {
+
+.alternative-cassette {
+  display: flex;
+  justify-content: space-between;
+}
+.alternative-cassette p {
   font-size: 1rem;
   font-weight: 300;
-  width: 40rem;
+  width: 550px;
+}
+.alternative-cassette .cassette img {
+  position: absolute;
+  right: 15%;
+  top: 5%;
+  transform: rotate(30deg);
+  opacity: 0.5;
+  width: 450px;
+}
+
+@media (max-width: 768px) {
+  .alternative-wrapper-1 {
+    height: 400px;
+    padding: 40px;
+  }
+
+  .alternative-cassette .cassette img {
+    left: 40%;
+    top: 15.5%;
+  }
+}
+.alternative-wrapper-2 .soundwave {
+  background: linear-gradient(to right, rgba(0, 58, 65, 0.9), rgba(255, 255, 255, 0.5)), url(../images/icons/soundwave_colored.png) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.alternative-wrapper-2 .soundwave .alternative-txt {
+  text-align: center;
+  padding: 100px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 @media (max-width: 576px) {
-  .alternative-wrapper {
-    padding: 50px;
-  }
-  .alternative-wrapper .logo-alt {
-    width: 15rem;
-  }
-  .alternative-wrapper img {
-    width: 20rem;
-  }
-  .alternative-wrapper p {
-    font-size: 1rem;
-    width: 15rem;
+  .alternative-wrapper-2 .soundwave .alternative-txt {
+    height: 200px;
+    width: 500px;
+    padding: 40px;
   }
 }
+@media (max-width: 768px) {
+  .alternative-wrapper-2 .soundwave .alternative-txt {
+    height: 350px;
+    padding: 40px;
+    width: 500px;
+  }
+}
+.alternative-wrapper-3 {
+  height: 500px;
+  background-color: #1d1d1d;
+  padding: 100px;
+  color: #ffffff;
+  position: relative;
+}
+.alternative-wrapper-3 .playlist-alt {
+  position: absolute;
+  opacity: 0.3;
+  bottom: 1%;
+}
+.alternative-wrapper-3 .playlist-txt {
+  width: 500px;
+  position: absolute;
+  right: 10%;
+}
+
+.my-btn-petrol {
+  background-color: #0092a3;
+  border-radius: 40px;
+}
+.my-btn-petrol a {
+  color: #ffffff;
+}
+.my-btn-petrol:hover {
+  background-color: #ff9c3f;
+}
+.my-btn-petrol:hover a:hover {
+  color: #333;
+}
+
 .jumbo {
   height: 100%;
   background: linear-gradient(to right, rgba(0, 58, 65, 0.9), rgba(29, 29, 29, 0.3)), url(../images/bg-img/Tablet_Musik_600px.jpeg) center;
@@ -10938,39 +11017,37 @@ li > a:hover:after {
   padding: 80px;
   color: #ffffff;
 }
-
-.jumbo-1 {
+.jumbo .jumbo-1 {
   display: flex;
   justify-content: start;
 }
-.jumbo-1 .jumbo-border {
+.jumbo .jumbo-1 .jumbo-border {
   background-color: #1d1d1d;
   width: 45rem;
 }
-.jumbo-1 .jumbo-border .my-btn-petrol {
+.jumbo .jumbo-1 .jumbo-border .my-btn-petrol {
   background-color: #0092a3;
   color: #fff;
   border-radius: 40px;
 }
-.jumbo-1 .jumbo-border .my-btn-petrol:hover {
+.jumbo .jumbo-1 .jumbo-border .my-btn-petrol:hover {
   background-color: red;
 }
-
-.jumbo-2 {
+.jumbo .jumbo-2 {
   display: flex;
   justify-content: end;
   color: #ffffff;
 }
-.jumbo-2 .jumbo-border {
+.jumbo .jumbo-2 .jumbo-border {
   background-color: #1d1d1d;
   width: 45rem;
 }
-.jumbo-2 .jumbo-border .my-btn-petrol {
+.jumbo .jumbo-2 .jumbo-border .my-btn-petrol {
   background-color: #0092a3;
   color: #fff;
   border-radius: 40px;
 }
-.jumbo-2 .jumbo-border .my-btn-petrol:hover {
+.jumbo .jumbo-2 .jumbo-border .my-btn-petrol:hover {
   background-color: red;
   border-radius: 40px;
 }
