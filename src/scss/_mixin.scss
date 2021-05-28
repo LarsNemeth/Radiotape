@@ -17,11 +17,24 @@
 @mixin hero-section-img {
   height: 100vh;
   background: linear-gradient(
-      to right,
-      rgba($primary-color, 0.9),
+      to left,
+      rgba($primary-color, 1.3),
       rgba($bg-color-light, 0.3)
     ),
     url(../images/bg-img/dj_photo_by_Laura_Balbarde.jpeg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//* DIE ALTERNATIVE ---------------------------------------*/
+
+@mixin soundwave {
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba(#fff, 0.5)
+    ),
+    url(../images/icons/soundwave_colored.png) center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -93,6 +106,24 @@
 
 @mixin pricing-bg {
   height: 60vh;
+}
+
+//* CONTACT FORM ------------------------- *//
+
+@mixin my-petrol-ptn {
+  background-color: $btn-bg-petrol;
+  border-radius: 40px;
+
+  a {
+    color: $txt-color-2;
+  }
+  &:hover {
+    background-color: $btn-hover-orange;
+
+    a:hover {
+      color: $txt-color-1;
+    }
+  }
 }
 
 //* CONTACT FORM ------------------------- *//
