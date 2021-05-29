@@ -4,6 +4,10 @@
 
 //* NAVBAR UNDERLINE  *//
 
+.nav {
+  overflow: hidden;
+}
+
 ul a:hover {
   color: $txt-color-2 !important;
 }
@@ -30,7 +34,9 @@ li > a:hover:after {
   width: 400px;
 }
 
-@media (max-width: 576px) {
+//* NAVBAR MEDIAQUERIES *//
+
+@media (max-width: 667px) {
   .logo {
     width: 200px;
   }
@@ -41,7 +47,6 @@ li > a:hover:after {
     align-items: center;
     height: 100vh;
     font-size: $ft-size-lg-nm;
-    /* background-color: $bg-color-dark; */
   }
 }
 
@@ -67,7 +72,12 @@ li > a:hover:after {
 //* NAVBAR TOGGLER  *//
 
 .navbar-toggler {
-  background-color: $primary-color;
+  background-color: $txt-color-1;
+}
+
+.navbar-toggler-icon {
+  height: 25px;
+  width: 25px;
 }
 
 //* HERO SECTION  *//
@@ -86,7 +96,7 @@ li > a:hover:after {
   font-weight: 300;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   .hero-txt {
     font-size: 4rem;
   }

@@ -19,3 +19,12 @@ $ci-gradient: linear-gradient(
 
 $btn-bg-petrol: (#0092a3);
 $btn-hover-orange: (#ff9c3f);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
