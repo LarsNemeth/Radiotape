@@ -11,6 +11,16 @@
     object-fit: cover;
     height: 200px;
     width: 100%;
+    filter: grayscale(0.6);
+
+    &:hover {
+      opacity: 0.8;
+      filter: grayscale(0);
+
+      h5 {
+        color: black;
+      }
+    }
   }
 
   h5 {
@@ -22,14 +32,6 @@
     text-decoration: none;
     color: $txt-color-2;
     font-size: $ft-size-lg-hd;
-  }
-
-  &:hover {
-    opacity: 0.4;
-
-    h5 {
-      color: black;
-    }
   }
 }
 
@@ -170,8 +172,14 @@
 
 .jumbo {
   @include bg-jumbo-1;
-  padding: 80px;
+  padding: 60px;
   color: $txt-color-2;
+
+  @media (max-width: 667px) {
+    .jumbo {
+      padding: 55px;
+    }
+  }
 
   //* JUMBO LEFT  --------------------------*//
 
@@ -182,6 +190,7 @@
     .jumbo-border {
       background-color: $bg-color-dark;
       width: 45rem;
+      opacity: 0.8;
 
       .my-btn-petrol {
         background-color: $btn-bg-petrol;
@@ -204,6 +213,7 @@
 
     .jumbo-border {
       background-color: $bg-color-dark;
+      opacity: 0.8;
       width: 45rem;
 
       .my-btn-petrol {
@@ -220,13 +230,12 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   .wordbreak {
     word-break: break-all;
+    hyphens: auto;
   }
 }
-
-//* BUTTONS  --------------------------------*//
 
 //* ABOUT US (Wir sind ...)  -------------------------------------------->  */
 .we-are-wrapper {
