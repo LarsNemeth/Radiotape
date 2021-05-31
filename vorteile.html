@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Radiotape</title>
+  </head>
+  <body>
+    <header>
+      <!-- ? NAVBAR ----------------------------------------------------->
+      <nav
+        class="
+          navbar
+          bg-transparent
+          navbar-expand-lg navbar-dark
+          p-md-4
+          fixed-top
+        "
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="./images/logos/radiotape-logo.png"
+              alt="radiotape-logo"
+              class="logo"
+          /></a>
+
+          <!-- ? NAVBAR MOBILE Toggler Begin ----------------------------------------------------->
+          <button
+            class="navbar-toggler fs-q"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ? NAVBAR MOBILE Toggler End ----------------------------------------------------->
+          <div
+            class="collapse navbar-collapse bg-mobile"
+            id="navbarSupportedContent"
+          >
+            <ul class="menu-nav navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Branchen</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Vorteile</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Rechtliches</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Pakete</a
+                >
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link active" aria-current="page" href="#">Wir</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto mx-5">
+              <button class="btn btn-dark btn-outline-light fs-4" type="submit">
+                Kontakt
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-hero">
+        <h1 class="hero-txt">Musik für dein Geschäft</h1>
+      </div>
+    </header>
+
+    <!-- ? MAIN START --------->
+
+    <!-- ? CARD SECTION ------------------------------------------->
+    <main>
+      <section>
+        <div class="container">
+          <h1 class="vt-hd mt-5">Dein individuelles Streaming Paket</h1>
+          <div class="card-container mt-5">
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/icons/Radio.png"
+                class="card-img-top"
+                alt="Radio"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Radio</h5>
+                <p class="card-text">
+                  Das Radio ist dein Musik-Stundenplan, abgestimmt auf
+                  Tagesgeschäft und Kundenaufkommen in deiner Location.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <img
+                src="./images/icons/Tapes.png"
+                class="card-img-top"
+                alt="Tapes"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title">Tapes</h5>
+                <p class="card-text">
+                  Ist mal nicht business as usual angesagt, bietet Radiotape aus
+                  unterschiedlichen Themen und Genres das richtige Tape für die
+                  passende Stimmung.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ? Footer  --------------------------------------------->
+      <footer>
+        <div class="impressum mt-3">
+          <a href="impressum.html">Impressum</a>
+        </div>
+        <div class="social-icons mt-3 mb-3">
+          <a href="#!">
+            <i class="fab fa-twitter fa-2x"> </i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-facebook fa-2x"> </i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-instagram fa-2x"> </i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-github fa-2x"> </i>
+          </a>
+        </div>
+        <div><p>All Rights Reserved &copy; by Location Based Radio UG</p></div>
+      </footer>
+    </main>
+
+    <!-- ? FAVICONS ------------------------------------------------------>
+    <script
+      src="https://kit.fontawesome.com/9f49c39477.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ? BOOTSTRAP ------------------------------------------------------>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
