@@ -9,9 +9,13 @@
 @import "contact";
 @import "impressum";
 
-/* * {
+//* Vorteile  *//
+
+@import "vorteile";
+
+* {
   border: 2px solid red;
-} */
+}
 
 root {
   font-size: 62.5%;
@@ -30,6 +34,12 @@ footer {
   color: $txt-color-2;
   height: 33.33vh;
   background-color: $bg-color-dark;
+}
+
+.impressum-wrapper {
+  .container {
+    padding: 100px;
+  }
 }
 
 .impressum a {
