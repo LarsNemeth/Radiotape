@@ -10891,6 +10891,14 @@ li > a:hover:after {
   object-fit: cover;
   height: 200px;
   width: 100%;
+  filter: grayscale(0.6);
+}
+.cards img:hover {
+  opacity: 0.8;
+  filter: grayscale(0);
+}
+.cards img:hover h5, .cards img:hover .h5 {
+  color: black;
 }
 .cards h5, .cards .h5 {
   position: absolute;
@@ -10901,12 +10909,6 @@ li > a:hover:after {
   text-decoration: none;
   color: #ffffff;
   font-size: 3rem;
-}
-.cards:hover {
-  opacity: 0.4;
-}
-.cards:hover h5, .cards:hover .h5 {
-  color: black;
 }
 
 .alternative-wrapper-1 {
@@ -11039,8 +11041,13 @@ li > a:hover:after {
   background: linear-gradient(to right, rgba(0, 58, 65, 0.9), rgba(29, 29, 29, 0.3)), url(../images/bg-img/Tablet_Musik_600px.jpeg) center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 80px;
+  padding: 60px;
   color: #ffffff;
+}
+@media (max-width: 667px) {
+  .jumbo .jumbo {
+    padding: 55px;
+  }
 }
 .jumbo .jumbo-1 {
   display: flex;
@@ -11049,6 +11056,7 @@ li > a:hover:after {
 .jumbo .jumbo-1 .jumbo-border {
   background-color: #1d1d1d;
   width: 45rem;
+  opacity: 0.8;
 }
 .jumbo .jumbo-1 .jumbo-border .my-btn-petrol {
   background-color: #0092a3;
@@ -11065,6 +11073,7 @@ li > a:hover:after {
 }
 .jumbo .jumbo-2 .jumbo-border {
   background-color: #1d1d1d;
+  opacity: 0.8;
   width: 45rem;
 }
 .jumbo .jumbo-2 .jumbo-border .my-btn-petrol {
@@ -11077,9 +11086,10 @@ li > a:hover:after {
   border-radius: 40px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 667px) {
   .wordbreak {
     word-break: break-all;
+    hyphens: auto;
   }
 }
 .we-are-wrapper {
