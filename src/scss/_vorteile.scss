@@ -55,7 +55,7 @@
   position: relative;
   background-size: cover;
   width: 55%;
-  height: 100vh;
+  height: 700px;
 }
 
 //* Text Tablet Left  *//
@@ -105,4 +105,40 @@
   height: 100vh;
 }
 
-//* ENDE Computer Right *//
+//* ANFANG Browser & Geräte *//
+
+.browser-geraete {
+  height: 100vh;
+}
+
+.radiotape-devices-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    position: absolute;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktop-img {
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+    z-index: 1;
+    align-self: center;
+    transform: scaleX(-1);
+
+    img:hover {
+      z-index: 3;
+    }
+  }
+
+  .tablet-img {
+    z-index: 2;
+    align-self: center;
+  }
+}
