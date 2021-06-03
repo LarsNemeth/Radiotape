@@ -1,8 +1,108 @@
-.vt-hd {
-  text-align: center;
+//* Site CSS Global  * //
+
+@import "mixin";
+
+//* NAVBAR  *//
+
+//*? GENERAL SITE SET-UP  */
+.vt-bg-color {
+  background-color: $primary-color;
+  color: $txt-color-2;
 }
 
+.vt-hd {
+  color: $txt-color-2;
+}
+
+//*? CARD SECTION "Dein individuelles Streaming Paket */
 .card-container {
   display: flex;
   justify-content: space-evenly;
 }
+
+.card-img-top {
+  width: 200px;
+}
+
+.card {
+  border: 2px solid $txt-color-2;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $txt-color-2;
+}
+
+//*? TABLET LEFT --------------------------------------*/
+
+.tablet-left-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-content {
+  background-color: $bg-color-light;
+}
+
+//* Image Tablet Left  *//
+
+.img-tablet-left {
+  background-image: url(../images/icons/Frontend-Tablet_2.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 55%;
+  height: 100vh;
+}
+
+//* Text Tablet Left  *//
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.text-col-left {
+  @include center-txt;
+  text-align: left;
+}
+
+//* CARD-SECTION II  */
+
+.card-form {
+  @include card-form;
+}
+
+.card-section-h2 {
+  @media (min-width: 0) {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+}
+
+//* ANFANG Computer Right  *//
+
+.computer-right-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.img-computer-right {
+  background-image: url(../images/icons/Frontend_M-Laptop_neu.png);
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  width: 55%;
+  height: 100vh;
+}
+
+//* ENDE Computer Right *//

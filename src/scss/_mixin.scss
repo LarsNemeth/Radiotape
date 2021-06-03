@@ -102,6 +102,13 @@
   text-align: center;
 }
 
+@mixin center-txt {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+}
+
 //* PRICE SECTION ------------------------*//
 
 @mixin pricing-bg {
@@ -138,6 +145,23 @@
     url(../images/bg-img/kaffee-theke.jpg) center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+//* CARD SECTION II  */
+
+@mixin card-form {
+  background-color: $primary-color;
+  color: $txt-color-2;
+  height: 300px;
+  border-radius: 20px;
+  border: 2px solid $primary-color;
+
+  &:hover {
+    background-color: $bg-color-light;
+    color: $txt-color-1;
+    -webkit-box-shadow: -1px 11px 22px -3px rgba(0, 0, 0, 0.59);
+    box-shadow: -1px 11px 22px -3px rgba(0, 0, 0, 0.59);
+  }
 }
 
 /* Cassette Photo by Laura Balbarde from Pexels */

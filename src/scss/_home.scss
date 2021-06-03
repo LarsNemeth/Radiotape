@@ -4,6 +4,10 @@
 
 //* ? CARDS (Gastro / Shop / Hotel / Events) ------------------------------------------> *//
 
+.row {
+  overflow: hidden;
+}
+
 .cards {
   position: relative;
 
@@ -245,6 +249,10 @@
   height: 100%;
   background-color: $bg-color-light;
 
+  p {
+    overflow: hidden;
+  }
+
   .we-are-hd {
     @include black-box;
   }
@@ -263,13 +271,15 @@
       }
     }
     .we-are-p p {
-      width: 80%;
+      width: 60%;
       text-align: center;
     }
   }
 
   p {
-    width: 900px;
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
   }
 
   span {

@@ -1,0 +1,22 @@
+.grid-container {
+  background: $ci-gradient;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 500px);
+  gap: 10px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+  background-color: $bg-color-dark;
+  border-radius: 20px;
+}
