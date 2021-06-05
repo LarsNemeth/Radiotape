@@ -65,6 +65,16 @@
   letter-spacing: 15px;
 }
 
+@mixin white-box {
+  text-align: center;
+  line-height: 2.6;
+  width: 30rem;
+  height: 8rem;
+  border: 10px solid $txt-color-2;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
 @mixin black-box-mixin {
   @media (max-width: 576px) {
     .we-are-hd {

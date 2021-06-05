@@ -28,3 +28,9 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1400px,
 );
+
+//* Carousel Variables */
+
+.my-carousel-bg {
+  background-color: $bg-color-dark;
+}
