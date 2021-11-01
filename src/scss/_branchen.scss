@@ -1,13 +1,94 @@
-.grid-container {
-  background: $ci-gradient;
-}
+@import "mixin";
+@import "variables";
 
-.grid-wrapper {
+//* CARD SECTION BRANCHEN HERO //@at-root .card-sec-hero {
+
+//* GRID SECTION */
+
+.deine-branche {
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 500px);
-  gap: 10px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  color: $txt-color-2;
+  grid-auto-flow: dense;
 }
+
+.tape1,
+.tape2,
+.tape3,
+.tape4,
+.tape5,
+.tape6 {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  background-color: $primary-color;
+}
+
+.tape1 {
+  grid-area: 1/1/2/3;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    transform: rotate(-45deg);
+  }
+}
+
+.tape2 {
+  grid-area: 1/3/2/4;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    transform: rotate(-45deg);
+  }
+}
+
+.tape3 {
+  grid-area: 1/4/2/5;
+}
+
+.tape4 {
+  grid-area: 2/1/3/2;
+}
+
+.tape5 {
+  grid-area: 2/2/3/3;
+}
+
+.tape6 {
+  grid-area: 2/3/3/5;
+}
+
+.bg-hero-gastro {
+  background-image: url(../images/bg-img/lampen-laden-1024x681_bright.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-hero-branchen {
+  background-color: $primary-color;
+}
+
+.card-sec-hero-branchen {
+  @include card-sec-raster;
+  color: $txt-color-1;
+}
+
+.hero-branchen-h2 {
+  color: $txt-color-2;
+}
+
+//* CLIENT REFERENCES //
 
 .box1,
 .box2,

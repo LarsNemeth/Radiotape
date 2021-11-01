@@ -25,16 +25,9 @@
   width: 200px;
 }
 
-.card {
-  border: 2px solid $txt-color-2;
-  border-radius: 20px;
-  padding: 30px;
+.card-sec-petrol {
+  @include card-sec-raster;
   background-color: $primary-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: $txt-color-2;
 }
 
 //*? TABLET LEFT --------------------------------------*/
@@ -136,7 +129,7 @@
   position: relative;
   background-size: cover;
   width: 1000px;
-  height: 50vh;
+  height: 100vh;
 
   @media (max-width: 667px) {
     width: 100%;
@@ -172,58 +165,6 @@
   }
 }
 
-/* .computer-right-flex {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.img-computer-right {
-  background-image: url(../images/icons/Frontend_M-Laptop_neu.png);
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  width: 1000px;
-  height: 100vh;
-
-  @media (max-width: 1200px) {
-    width: 700px;
-    height: 650px;
-  }
-
-  @media (max-width: 768px) {
-    width: 500px;
-    height: 400px;
-  }
-
-  @media (max-width: 667px) {
-    width: 840px;
-    height: 400px;
-  }
-}
-
-.text-left {
-  display: flex;
-  align-items: center;
-  position: relative;
-  left: 10px;
-
-  @media (max-width: 1200px) {
-    left: 170px;
-  }
-
-  @media (max-width: 1050px) {
-    width: auto;
-  }
-  @media (max-width: 576px) {
-    width: 100%;
-    left: 30px;
-  }
-}
-
-.text-col-right {
-  text-align: right;
-} */
-
 //* CARD-SECTION II  */
 
 .card-form {
@@ -251,39 +192,3 @@
   background-repeat: no-repeat;
   height: 400px;
 }
-
-/* .browser-geraete {
-  height: 100vh;
-}
-
-.radiotape-devices-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-
-  img {
-    position: absolute;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .desktop-img {
-    border: 2px solid $primary-color;
-    border-radius: 20px;
-    z-index: 1;
-    align-self: center;
-    transform: scaleX(-1);
-
-    img:hover {
-      z-index: 3;
-    }
-  }
-
-  .tablet-img {
-    z-index: 2;
-    align-self: center;
-  }
-} */

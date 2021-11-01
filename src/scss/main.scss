@@ -1,18 +1,18 @@
 // This is where you can import other stylesheets or write your scss code
-@import "../../node_modules/bootstrap/scss/bootstrap";
-@import "variables";
-@import "header";
-@import "mixin";
-@import "home";
-@import "timetable";
-@import "pricing";
-@import "contact";
-@import "impressum";
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'variables';
+@import 'header';
+@import 'mixin';
+@import 'home';
+@import 'timetable';
+@import 'pricing';
+@import 'contact';
+@import 'impressum';
 
 //* Unterseiten  *//
 
-@import "branchen";
-@import "vorteile";
+@import 'branchen';
+@import 'vorteile';
 
 root {
   font-size: 62.5%;
@@ -27,8 +27,8 @@ html {
 }
 
 body {
-  font-family: "Inter", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Inter', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 //* FOOTER & IMPRESSUM  *//
