@@ -53,6 +53,32 @@
   background-attachment: fixed;
 }
 
+@mixin kaffee-theke {
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($bg-color-dark, 0.3)
+    ),
+    url(../images/bg-img/kaffee-theke.jpg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+//* BRANCHEN
+
+@mixin lampen-laden {
+  height: 100%;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($bg-color-dark, 0.3)
+    ),
+    url(../images/bg-img/lampen-laden-1024x681_bright.jpeg) center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 //* LIGHT BACKGROUND SECTION (Wir sind ...) ---------------------- */
 
 @mixin black-box {
@@ -63,7 +89,6 @@
   border: 10px solid $txt-color-1;
   text-transform: uppercase;
   letter-spacing: 15px;
-  
 }
 
 @media (max-width: 576px) {
@@ -76,8 +101,6 @@
     }
   }
 }
-
-
 
 //* Container for often-used Stylings  ------ *//
 

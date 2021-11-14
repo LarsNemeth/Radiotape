@@ -1,5 +1,5 @@
-@import "mixin";
-@import "variables";
+@import 'mixin';
+@import 'variables';
 
 //* CARD SECTION BRANCHEN HERO //@at-root .card-sec-hero {
 
@@ -71,6 +71,18 @@
 
 .bg-hero-gastro {
   background-image: url(../images/bg-img/lampen-laden-1024x681_bright.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lampen-laden-branchen-seite {
+  @include lampen-laden;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-hero-kaffee-theke {
+  @include kaffee-theke;
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -1,10 +1,10 @@
 @import 'mixin';
+@import 'variables'
 
-//* ? HOME Section -------------------------------------> *//
 
-//* ? CARDS (Gastro / Shop / Hotel / Events) ------------------------------------------> *//
-
-.row {
+  //* ? HOME Section -------------------------------------> *//
+  //* ? CARDS (Gastro / Shop / Hotel / Events) ------------------------------------------> *//
+  .row {
   overflow: hidden;
 }
 
@@ -269,7 +269,6 @@
         letter-spacing: 15px;
         font-size: $ft-size-lg-nm;
       }
-    
     }
     .we-are-p p {
       width: 60%;
@@ -316,9 +315,9 @@
 //* FOOTER -------------------------------------------->  */
 
 .social-icons a {
-  color: $txt-color-2;
+  color: $secondary-color;
 
   &:hover {
-    color: $secondary-color;
+    color: $txt-color-1;
   }
 }
