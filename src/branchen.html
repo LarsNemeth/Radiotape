@@ -1,431 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/main.css" />
-    <title>Radiotape</title>
-  </head>
-  <body>
-    <header>
-      <!-- ? NAVBAR ----------------------------------------------------->
-      <nav
-        class="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="scss/main.css" />
+  <title>Radiotape</title>
+</head>
+
+<body>
+  <header>
+    <!-- ? NAVBAR ----------------------------------------------------->
+    <nav class="
           navbar
           bg-transparent
           navbar-expand-lg navbar-dark
           p-md-4
           fixed-top
-        "
-      >
-        <div class="container">
-          <a class="navbar-brand" href="index.html"
-            ><img
-              src="./images/logos/radiotape-logo.png"
-              alt="radiotape-logo"
-              class="logo"
-          /></a>
+        ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="./images/logos/radiotape-logo.png" alt="radiotape-logo"
+            class="logo" /></a>
 
-          <!-- ? NAVBAR MOBILE Toggler Begin ----------------------------------------------------->
-          <button
-            class="navbar-toggler fs-q"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+        <!-- ? NAVBAR MOBILE Toggler Begin ----------------------------------------------------->
+        <button class="navbar-toggler fs-q" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- ? NAVBAR MOBILE Toggler End ----------------------------------------------------->
+        <div class="collapse navbar-collapse bg-mobile" id="navbarSupportedContent">
+          <ul class="menu-nav navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="branchen.html">Branchen</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="vorteile.html">Vorteile</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#">Rechtliches</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#">Pakete</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#">Wir</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ms-auto mx-5">
+            <button class="btn btn-outline-light fs-4" onclick="location.href='#kontakt_ID'" type="button">
+              Kontakt
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-hero">
+      <h1 class="hero-txt">Musik für dein Geschäft</h1>
+    </div>
+  </header>
+
+  <!-- ? MAIN START --------->
+
+  <!-- ? CARD SECTION ------------------------------------------->
+
+  <main>
+    <!-- ? Card Section Branchen ------------------------------------------->
+    <div class="bg-hero-branchen row">
+      <div class="text-center mt-5 hero-branchen-h2">
+        <h5>Deine Branche</h5>
+        <h2 class="card-section-h2">Deine Stimmung</h2>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
+          <img src="./images/icons/food-serving.png" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h2 class="card-text">Gastro</h2>
+          </div>
+        </div>
+        <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
+          <img src="./images/icons/fashion.png" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h2 class="card-text">Fashion</h2>
+          </div>
+        </div>
+
+        <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
+          <img src="./images/icons/shopping-cart.png" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h2 class="card-text">Shop</h2>
+          </div>
+        </div>
+        <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
+          <img src="./images/icons/reception-bell.png" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h2 class="card-text">Hotel</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ? ANFANG: Card Section Branche: Gastro ------------------------------------------->
+    <section>
+      <div class="bg-hero-gastro">
+        <div>
+          <div class="container">
+            <div class="row deine-branche p-5">
+              <div class="tape1 col-6">
+                <h2 class="p-3">Gastro</h2>
+                <img src="./images/icons/radio.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape2 row-cols-lg-6">
+                <img src="./images/icons/cassette-tape-variant-with-white-details.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape3 row-cols-lg-6"></div>
+              <div class="tape4"></div>
+              <div class="tape5"></div>
+              <div class="tape6">
+                <h2 class="p-3">Gastro</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ? ENDE: Card Section Branche: Gastro ------------------------------------------->
+        <!-- ? ANFANG: Card Section Branche: Fashion ------------------------------------------->
+        <div>
+          <div class="container">
+            <div class="row deine-branche p-5">
+              <div class="tape1 col-6">
+                <h2 class="p-3">Fashion</h2>
+                <img src="./images/icons/radio.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape2 row-cols-lg-6">
+                <img src="./images/icons/cassette-tape-variant-with-white-details.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape3 row-cols-lg-6"></div>
+              <div class="tape4"></div>
+              <div class="tape5"></div>
+              <div class="tape6">
+                <h2 class="p-3">Fashion</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ? ENDE: Card Section Branche: Fashion ------------------------------------------->
+      <!-- ? ANFANG: Card Section Branche: Shop ------------------------------------------->
+      <div class="jumbo">
+        <div>
+          <div class="container">
+            <div class="row deine-branche p-5">
+              <div class="tape1 col-6">
+                <h2 class="p-3">Shop</h2>
+                <img src="./images/icons/radio.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape2 row-cols-lg-6">
+                <img src="./images/icons/cassette-tape-variant-with-white-details.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape3 row-cols-lg-6"></div>
+              <div class="tape4"></div>
+              <div class="tape5"></div>
+              <div class="tape6">
+                <h2 class="p-3">Shop</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ? ENDE: Card Section Branche: Shop ------------------------------------------->
+        <!-- ? ANFANG: Card Section Branche: Hotel ------------------------------------------->
+        <div>
+          <div class="container">
+            <div class="row deine-branche p-5">
+              <div class="tape1 col-6">
+                <h2 class="p-3">Hotel</h2>
+                <img src="./images/icons/radio.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape2 row-cols-lg-6">
+                <img src="./images/icons/cassette-tape-variant-with-white-details.png" alt="" style="width: 10rem" />
+              </div>
+              <div class="tape3 row-cols-lg-6"></div>
+              <div class="tape4"></div>
+              <div class="tape5"></div>
+              <div class="tape6">
+                <h2 class="p-3">Hotel</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ? ENDE: Card Section Branche: Hotel ------------------------------------------->
+    </section>
+
+    <section>
+      <div class="clients">
+        <div class="d-flex justify-content-center my-carousel-bg pt-5">
+          <div class="clients-hd fs-1">
+            <span>Kunden</span>
+          </div>
+        </div>
+        <div id="carouselExampleInterval" class="carousel slide my-carousel-bg pt-5 pb-5" data-bs-ride="carousel">
+          <div class="carousel-inner d-print-flex container">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="d-flex justify-content-center cl-img">
+                <div class="row justify-content-center">
+                  <img src="./images/clients/BidgesAndSons_sw.png" class="d-block" alt="..." />
+                  <img src="./images/clients/DikaEyewear_sw.png" class="d-block" alt="..." />
+                  <img src="./images/clients/FatUnicornSweets_sw.png" class="d-block" alt="..." />
+                  <img src="./images/clients/HamburgCityInk_sw.png" class="d-block" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="d-flex justify-content-center cl-img">
+                <div class="row justify-content-center">
+                  <img src="./images/clients/Gabriel_sw.png" class="d-block row-cols-sm-12 row-cols-md-4" alt="..." />
+                  <img src="./images/clients/LorenzKitchen2_sw.png" class="d-block row-cols-sm-12 row-cols-md-4"
+                    alt="..." />
+                  <img src="./images/clients/Luehmann_sw.png" class="d-block row-cols-sm-12 row-cols-md-4" alt="..." />
+                  <img src="./images/clients/Maybach_sw2.png" class="d-block row-cols-sm-12 row-cols-md-4" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex justify-content-center cl-img">
+                <div class="row justify-content-center">
+                  <img src="./images/clients/MyCityOnIce_sw.png" class="d-block row-cols-sm-12 row-cols-md-4"
+                    alt="..." />
+                  <img src="./images/clients/SanBurrito_sw.png" class="d-block col-lg-3" alt="..." />
+                  <img src="./images/clients/Stenzel_sw.png" class="d-block col-lg-3" alt="..." />
+                  <img src="./images/clients/brueckenhaus_xl.png" class="d-block col-lg-3" alt="..." />
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
-          <!-- ? NAVBAR MOBILE Toggler End ----------------------------------------------------->
-          <div
-            class="collapse navbar-collapse bg-mobile"
-            id="navbarSupportedContent"
-          >
-            <ul class="menu-nav navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="branchen.html"
-                  >Branchen</a
-                >
-              </li>
-              <li class="nav-item px-2">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="vorteile.html"
-                  >Vorteile</a
-                >
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Rechtliches</a
-                >
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Pakete</a
-                >
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link active" aria-current="page" href="#">Wir</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav ms-auto mx-5">
-              <button
-                class="btn btn-outline-light fs-4"
-                onclick="location.href='#kontakt_ID'"
-                type="button"
-              >
-                Kontakt
-              </button>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="bg-hero">
-        <h1 class="hero-txt">Musik für dein Geschäft</h1>
-      </div>
-    </header>
-
-    <!-- ? MAIN START --------->
-
-    <!-- ? CARD SECTION ------------------------------------------->
-
-    <main>
-      <!-- ? Card Section Branchen ------------------------------------------->
-      <div class="bg-hero-branchen row">
-        <div class="text-center mt-5 hero-branchen-h2">
-          <h5>Deine Branche</h5>
-          <h2 class="card-section-h2">Deine Stimmung</h2>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
-            <img
-              src="./images/icons/food-serving.png"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body">
-              <h2 class="card-text">Gastro</h2>
-            </div>
-          </div>
-          <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
-            <img
-              src="./images/icons/fashion.png"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body">
-              <h2 class="card-text">Fashion</h2>
-            </div>
-          </div>
-
-          <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
-            <img
-              src="./images/icons/shopping-cart.png"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body">
-              <h2 class="card-text">Shop</h2>
-            </div>
-          </div>
-          <div class="card card-sec-hero-branchen m-5" style="width: 10rem">
-            <img
-              src="./images/icons/reception-bell.png"
-              class="card-img-top img-fluid"
-              alt="..."
-            />
-            <div class="card-body">
-              <h2 class="card-text">Hotel</h2>
-            </div>
-          </div>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
+    </section>
 
-      <!-- ? ANFANG: Card Section Branche: Gastro ------------------------------------------->
-      <section>
-        <div class="bg-hero-gastro">
-          <div>
-            <div class="container">
-              <div class="row deine-branche p-5">
-                <div class="tape1 col-6">
-                  <h2 class="p-3">Gastro</h2>
-                  <img
-                    src="./images/icons/radio.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape2 row-cols-lg-6">
-                  <img
-                    src="./images/icons/cassette-tape-variant-with-white-details.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape3 row-cols-lg-6"></div>
-                <div class="tape4"></div>
-                <div class="tape5"></div>
-                <div class="tape6"><h2 class="p-3">Gastro</h2></div>
-              </div>
-            </div>
-          </div>
-          <!-- ? ENDE: Card Section Branche: Gastro ------------------------------------------->
-          <!-- ? ANFANG: Card Section Branche: Fashion ------------------------------------------->
-          <div>
-            <div class="container">
-              <div class="row deine-branche p-5">
-                <div class="tape1 col-6">
-                  <h2 class="p-3">Fashion</h2>
-                  <img
-                    src="./images/icons/radio.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape2 row-cols-lg-6">
-                  <img
-                    src="./images/icons/cassette-tape-variant-with-white-details.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape3 row-cols-lg-6"></div>
-                <div class="tape4"></div>
-                <div class="tape5"></div>
-                <div class="tape6"><h2 class="p-3">Fashion</h2></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- ? Footer  --------------------------------------------->
+    <footer>
+      <div class="impressum mt-3">
+        <a href="impressum.html">Impressum</a>
+      </div>
+      <div class="social-icons mt-3 mb-3">
+        <a href="#!">
+          <i class="fab fa-twitter fa-2x"> </i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-facebook fa-2x"> </i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-instagram fa-2x"> </i>
+        </a>
+        <a href="#!">
+          <i class="fab fa-github fa-2x"> </i>
+        </a>
+      </div>
+      <div>
+        <p>All Rights Reserved &copy; by Location Based Radio UG</p>
+      </div>
+    </footer>
+  </main>
 
-        <!-- ? ENDE: Card Section Branche: Fashion ------------------------------------------->
-        <!-- ? ANFANG: Card Section Branche: Shop ------------------------------------------->
-        <div class="jumbo">
-          <div>
-            <div class="container">
-              <div class="row deine-branche p-5">
-                <div class="tape1 col-6">
-                  <h2 class="p-3">Shop</h2>
-                  <img
-                    src="./images/icons/radio.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape2 row-cols-lg-6">
-                  <img
-                    src="./images/icons/cassette-tape-variant-with-white-details.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape3 row-cols-lg-6"></div>
-                <div class="tape4"></div>
-                <div class="tape5"></div>
-                <div class="tape6"><h2 class="p-3">Shop</h2></div>
-              </div>
-            </div>
-          </div>
-          <!-- ? ENDE: Card Section Branche: Shop ------------------------------------------->
-          <!-- ? ANFANG: Card Section Branche: Hotel ------------------------------------------->
-          <div>
-            <div class="container">
-              <div class="row deine-branche p-5">
-                <div class="tape1 col-6">
-                  <h2 class="p-3">Hotel</h2>
-                  <img
-                    src="./images/icons/radio.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape2 row-cols-lg-6">
-                  <img
-                    src="./images/icons/cassette-tape-variant-with-white-details.png"
-                    alt=""
-                    style="width: 10rem"
-                  />
-                </div>
-                <div class="tape3 row-cols-lg-6"></div>
-                <div class="tape4"></div>
-                <div class="tape5"></div>
-                <div class="tape6"><h2 class="p-3">Hotel</h2></div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- ? FAVICONS ------------------------------------------------------>
+  <script src="https://kit.fontawesome.com/9f49c39477.js" crossorigin="anonymous"></script>
 
-        <!-- ? ENDE: Card Section Branche: Hotel ------------------------------------------->
-      </section>
+  <!-- ? BOOTSTRAP ------------------------------------------------------>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="scripts/index.js"></script>
+</body>
 
-      <section>
-        <div class="clients">
-          <div class="d-flex justify-content-center my-carousel-bg pt-5">
-            <div class="clients-hd fs-1">
-              <span>Kunden</span>
-            </div>
-          </div>
-          <div
-            id="carouselExampleInterval"
-            class="carousel slide my-carousel-bg pt-5 pb-5"
-            data-bs-ride="carousel"
-          >
-            <div class="carousel-inner d-print-flex container">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <div class="d-flex justify-content-center cl-img">
-                  <div class="row justify-content-center">
-                    <img
-                      src="./images/clients/BidgesAndSons_sw.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/DikaEyewear_sw.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/FatUnicornSweets_sw.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/HamburgCityInk_sw.png"
-                      class="d-block"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="d-flex justify-content-center cl-img">
-                  <div class="row justify-content-center">
-                    <img
-                      src="./images/clients/Gabriel_sw.png"
-                      class="d-block row-cols-sm-12 row-cols-md-4"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/LorenzKitchen2_sw.png"
-                      class="d-block row-cols-sm-12 row-cols-md-4"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/Luehmann_sw.png"
-                      class="d-block row-cols-sm-12 row-cols-md-4"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/Maybach_sw2.png"
-                      class="d-block row-cols-sm-12 row-cols-md-4"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="d-flex justify-content-center cl-img">
-                  <div class="row justify-content-center">
-                    <img
-                      src="./images/clients/MyCityOnIce_sw.png"
-                      class="d-block row-cols-sm-12 row-cols-md-4"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/SanBurrito_sw.png"
-                      class="d-block col-lg-3"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/Stenzel_sw.png"
-                      class="d-block col-lg-3"
-                      alt="..."
-                    />
-                    <img
-                      src="./images/clients/brueckenhaus_xl.png"
-                      class="d-block col-lg-3"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleInterval"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <!-- ? Footer  --------------------------------------------->
-      <footer>
-        <div class="impressum mt-3">
-          <a href="impressum.html">Impressum</a>
-        </div>
-        <div class="social-icons mt-3 mb-3">
-          <a href="#!">
-            <i class="fab fa-twitter fa-2x"> </i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-facebook fa-2x"> </i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-instagram fa-2x"> </i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-github fa-2x"> </i>
-          </a>
-        </div>
-        <div><p>All Rights Reserved &copy; by Location Based Radio UG</p></div>
-      </footer>
-    </main>
-
-    <!-- ? FAVICONS ------------------------------------------------------>
-    <script
-      src="https://kit.fontawesome.com/9f49c39477.js"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- ? BOOTSTRAP ------------------------------------------------------>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/index.js"></script>
-  </body>
 </html>

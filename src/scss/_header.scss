@@ -1,4 +1,4 @@
-@import "mixin";
+@import 'mixin';
 
 //* NAVBAR *//
 
@@ -13,7 +13,7 @@ ul a:hover {
 }
 
 li > a:after {
-  content: "";
+  content: '';
   display: block;
   height: 1.5px;
   background: $secondary-color;
@@ -90,7 +90,7 @@ li > a:hover:after {
 }
 
 .hero-txt {
-  font-size: 5rem;
+  font-size: 9rem;
   text-align: center;
   color: white;
   font-weight: 300;

@@ -85,8 +85,18 @@
   text-align: center;
   line-height: 2.6;
   width: 30rem;
-  height: 6rem;
+  // height: 6rem;
   border: 10px solid $txt-color-1;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+@mixin white-box {
+  text-align: center;
+  line-height: 2.6;
+  width: 30rem;
+  // height: 6rem;
+  border: 10px solid $txt-color-2;
   text-transform: uppercase;
   letter-spacing: 15px;
 }
@@ -126,7 +136,7 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  text-align: center;
+  justify-content: center;
 }
 
 //* PRICE SECTION ------------------------*//
@@ -137,12 +147,14 @@
 
 //* CONTACT FORM ------------------------- *//
 
-@mixin my-petrol-ptn {
+@mixin my-petrol-btn {
   background-color: $btn-bg-petrol;
-  border-radius: 40px;
+  border-radius: 140px;
+  border: 1px solid #fff;
 
   a {
     color: $txt-color-2;
+    text-decoration: none;
   }
   &:hover {
     background-color: $btn-hover-orange;
