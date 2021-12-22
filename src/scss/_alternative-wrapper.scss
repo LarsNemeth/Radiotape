@@ -1,0 +1,75 @@
+//* ALTERNATIVE-WRAPPER 1 *//
+
+.streaming-dienst-Alternative {
+  height: 100vh;
+  background-color: $bg-color-dark;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 90px;
+
+  .alternative-wrapper-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    width: 550px;
+  }
+
+  .alternative-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: right;
+    width: 550px;
+  }
+
+  .cassette-animation {
+    .cassette {
+      transform: rotate(30deg);
+      right: 33%;
+      top: 0%;
+      opacity: 0.2;
+    }
+  }
+
+  h4 {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: xx-large;
+  }
+}
+
+.massgeschneiderte-Playlisten {
+  height: 80vh;
+  background-color: $bg-color-dark;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 90px;
+
+  .alternative-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    width: 550px;
+  }
+
+  .playlist {
+    width: 350px;
+    position: absolute;
+    left: 30%;
+    top: 0%;
+    opacity: 0.2;
+  }
+
+  h4 {
+    text-align: right;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: xx-large;
+    width: 300px;
+  }
+}
